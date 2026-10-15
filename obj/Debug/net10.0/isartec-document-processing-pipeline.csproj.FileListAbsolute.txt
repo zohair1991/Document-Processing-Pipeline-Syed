@@ -1,0 +1,14 @@
+D:\Trial Tasks Interviews\isartec-document-processing-pipeline\bin\Debug\net10.0\isartec-document-processing-pipeline.exe
+D:\Trial Tasks Interviews\isartec-document-processing-pipeline\bin\Debug\net10.0\isartec-document-processing-pipeline.deps.json
+D:\Trial Tasks Interviews\isartec-document-processing-pipeline\bin\Debug\net10.0\isartec-document-processing-pipeline.runtimeconfig.json
+D:\Trial Tasks Interviews\isartec-document-processing-pipeline\bin\Debug\net10.0\isartec-document-processing-pipeline.dll
+D:\Trial Tasks Interviews\isartec-document-processing-pipeline\bin\Debug\net10.0\isartec-document-processing-pipeline.pdb
+D:\Trial Tasks Interviews\isartec-document-processing-pipeline\obj\Debug\net10.0\isartec-document-processing-pipeline.GeneratedMSBuildEditorConfig.editorconfig
+D:\Trial Tasks Interviews\isartec-document-processing-pipeline\obj\Debug\net10.0\isartec-document-processing-pipeline.AssemblyInfoInputs.cache
+D:\Trial Tasks Interviews\isartec-document-processing-pipeline\obj\Debug\net10.0\isartec-document-processing-pipeline.AssemblyInfo.cs
+D:\Trial Tasks Interviews\isartec-document-processing-pipeline\obj\Debug\net10.0\isartec-document-processing-pipeline.csproj.CoreCompileInputs.cache
+D:\Trial Tasks Interviews\isartec-document-processing-pipeline\obj\Debug\net10.0\isartec-document-processing-pipeline.dll
+D:\Trial Tasks Interviews\isartec-document-processing-pipeline\obj\Debug\net10.0\refint\isartec-document-processing-pipeline.dll
+D:\Trial Tasks Interviews\isartec-document-processing-pipeline\obj\Debug\net10.0\isartec-document-processing-pipeline.pdb
+D:\Trial Tasks Interviews\isartec-document-processing-pipeline\obj\Debug\net10.0\isartec-document-processing-pipeline.genruntimeconfig.cache
+D:\Trial Tasks Interviews\isartec-document-processing-pipeline\obj\Debug\net10.0\ref\isartec-document-processing-pipeline.dll
