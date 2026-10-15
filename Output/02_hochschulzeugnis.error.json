@@ -1,0 +1,6 @@
+{
+  "fileName": "02_hochschulzeugnis.txt",
+  "success": false,
+  "error": "LLM integration has not been configured yet.",
+  "reviewRequired": true
+}

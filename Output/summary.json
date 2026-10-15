@@ -1,0 +1,74 @@
+[
+  {
+    "fileName": "01_hochschulzugangsberechtigung.txt",
+    "success": false,
+    "error": "LLM integration has not been configured yet.",
+    "reviewRequired": true
+  },
+  {
+    "fileName": "02_hochschulzeugnis.txt",
+    "success": false,
+    "error": "LLM integration has not been configured yet.",
+    "reviewRequired": true
+  },
+  {
+    "fileName": "03_sprachnachweis_telc.txt",
+    "success": false,
+    "error": "LLM integration has not been configured yet.",
+    "reviewRequired": true
+  },
+  {
+    "fileName": "04_fachhochschulreife_ohne_note.txt",
+    "success": false,
+    "error": "LLM integration has not been configured yet.",
+    "reviewRequired": true
+  },
+  {
+    "fileName": "05_mietvertrag.txt",
+    "success": false,
+    "error": "LLM integration has not been configured yet.",
+    "reviewRequired": true
+  },
+  {
+    "fileName": "06_zwei_zeugnisse_kombiniert.txt",
+    "success": false,
+    "error": "LLM integration has not been configured yet.",
+    "reviewRequired": true
+  },
+  {
+    "fileName": "07_transcript_usa.txt",
+    "success": false,
+    "error": "LLM integration has not been configured yet.",
+    "reviewRequired": true
+  },
+  {
+    "fileName": "08_fragment_abgeschnitten.txt",
+    "success": false,
+    "error": "LLM integration has not been configured yet.",
+    "reviewRequired": true
+  },
+  {
+    "fileName": "09_masterzeugnis_datum_mehrdeutig.txt",
+    "success": false,
+    "error": "LLM integration has not been configured yet.",
+    "reviewRequired": true
+  },
+  {
+    "fileName": "10_sprachnachweis_ielts.txt",
+    "success": false,
+    "error": "LLM integration has not been configured yet.",
+    "reviewRequired": true
+  },
+  {
+    "fileName": "11_ihk_abschlusszeugnis.txt",
+    "success": false,
+    "error": "LLM integration has not been configured yet.",
+    "reviewRequired": true
+  },
+  {
+    "fileName": "12_zeugnis_scan_ocr.txt",
+    "success": false,
+    "error": "LLM integration has not been configured yet.",
+    "reviewRequired": true
+  }
+]
