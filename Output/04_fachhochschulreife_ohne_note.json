@@ -6,5 +6,5 @@
   "gesamtnote": null,
   "notensystem": null,
   "pruefung_erforderlich": false,
-  "begruendung": "Das Dokument ist ein Zeugnis der Fachhochschulreife und berechtigt zum Studium an Fachhochschulen, daher Klassifikation als hochschulzugangsberechtigung. Name, ausstellende Institution und Ausstellungsdatum sind eindeutig angegeben. Es wird keine Gesamtnote ausgewiesen, nur Einzelfachnoten in verbaler Form; dies ist bei diesem Dokumenttyp \u00FCblich und erfordert keine Pr\u00FCfung. Keine Widerspr\u00FCche, keine OCR-Fehler erkennbar."
+  "begruendung": "Das Dokument ist ein Zeugnis der Fachhochschulreife und berechtigt zum Studium an Fachhochschulen, daher Kategorie hochschulzugangsberechtigung. Alle wesentlichen Felder (Name, Institution, Datum) sind eindeutig extrahierbar. Eine Gesamtnote wird im Dokument nicht ausgewiesen, nur Einzelfachnoten in verbaler Form; dies ist f\u00FCr diesen Dokumenttyp nicht ungew\u00F6hnlich und erfordert keine manuelle Pr\u00FCfung. Kein weiterer Anlass zur Unsicherheit oder Widerspruch erkennbar."
 }

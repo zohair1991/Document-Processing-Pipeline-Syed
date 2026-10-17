@@ -6,5 +6,5 @@
   "gesamtnote": null,
   "notensystem": null,
   "pruefung_erforderlich": false,
-  "begruendung": "Das Dokument ist ein Wohnraummietvertrag und geh\u00F6rt zu keiner der universit\u00E4tsbezogenen Kategorien (hochschulzugangsberechtigung, hochschulzeugnis, sprachnachweis). Es ist kein Bildungs- oder Qualifikationsnachweis. Die Extraktion der verf\u00FCgbaren Felder ist eindeutig. Ein Abschlussdatum im Sinne eines Zeugnisdatums existiert nicht; das Vertragsdatum (12.09.2024) ist kein Abschlussdatum im Sinne der Klassifikation. Keine Unsicherheiten, die eine menschliche Pr\u00FCfung erfordern."
+  "begruendung": "Das Dokument ist ein Wohnraummietvertrag und f\u00E4llt in keine der universit\u00E4tsbezogenen Kategorien (hochschulzugangsberechtigung, hochschulzeugnis, sprachnachweis). Es handelt sich um ein privates Rechtsdokument ohne Bildungsbezug. Die Extraktion ist eindeutig und vollst\u00E4ndig; ein Abschlussdatum im bildungsrelevanten Sinne existiert nicht. Kein Pr\u00FCfbedarf."
 }

@@ -203,6 +203,7 @@ public sealed class EvaluationRunner
             $"({overallPercentage:F1}%)");
     }
 
+
     private static void Compare<T>(
         string label,
         T expected,
@@ -212,6 +213,18 @@ public sealed class EvaluationRunner
         List<string> mismatches)
     {
         var equal = EqualityComparer<T>.Default.Equals(expected, actual);
+
+        // For grades only, treat decimal commas and decimal points as equivalent.
+        if (!equal &&
+            metricName == "Overall grade" &&
+            expected is string expectedGrade &&
+            actual is string actualGrade)
+        {
+            equal = string.Equals(
+                expectedGrade.Trim().Replace(',', '.'),
+                actualGrade.Trim().Replace(',', '.'),
+                StringComparison.Ordinal);
+        }
 
         var current = metrics[metricName];
         metrics[metricName] = (
@@ -224,6 +237,7 @@ public sealed class EvaluationRunner
                 $"{label}: expected {Format(expected)}, actual {Format(actual)}");
         }
     }
+
 
     private static string Format<T>(T value) =>
         value is null ? "null" : $"\"{value}\"";

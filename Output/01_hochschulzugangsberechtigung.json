@@ -1,10 +1,10 @@
 {
   "dokumenttyp": "hochschulzugangsberechtigung",
   "name_inhaber": "Marlene Kirchhoff",
-  "ausstellende_institution": "Staatliches Gymnasium am Stadtpark Regensburg",
+  "ausstellende_institution": "Staatliches Gymnasium am Stadtpark, Regensburg",
   "abschlussdatum": "2022-06-28",
   "gesamtnote": "2,3",
   "notensystem": "Deutsches Abitur-Notensystem (1,0\u20134,0), Gesamtpunktzahl 612 von 900",
   "pruefung_erforderlich": false,
-  "begruendung": "Das Dokument ist ein vollst\u00E4ndiges und eindeutiges Zeugnis der Allgemeinen Hochschulreife. Alle relevanten Felder \u2013 Inhaberin, ausstellende Schule, Abschlussdatum, Durchschnittsnote und Gesamtpunktzahl \u2013 sind klar ausgewiesen. Die Durchschnittsnote 2,3 ist explizit als solche bezeichnet und nicht mit einer Einzel- oder Thesennote zu verwechseln. Es bestehen keine Widerspr\u00FCche, OCR-Fehler oder Unklarheiten, die eine manuelle Pr\u00FCfung erfordern w\u00FCrden."
+  "begruendung": "Das Dokument ist ein eindeutiges Zeugnis der Allgemeinen Hochschulreife eines staatlichen deutschen Gymnasiums. Alle relevanten Felder konnten zuverl\u00E4ssig extrahiert werden: Inhaberin, ausstellende Institution, Abschlussdatum (Ausstellungsdatum identisch mit Pr\u00FCfungsabschluss), Durchschnittsnote und Punktzahl sind klar angegeben. Keine Widerspr\u00FCche, Mehrdeutigkeiten oder OCR-Fehler erkennbar. Keine manuelle Pr\u00FCfung erforderlich."
 }

@@ -12,6 +12,7 @@ public sealed class ReviewPolicy
         _validator = validator;
     }
 
+
     public DocumentResult Apply(
         DocumentResult result,
         string documentText,
@@ -21,13 +22,10 @@ public sealed class ReviewPolicy
 
         if (result.PruefungErforderlich)
         {
-            reasons.Add(
-                "The model requested human review.");
+            reasons.Add("The model requested human review.");
         }
 
-        var errors = validationErrors
-            ?? _validator.Validate(result);
-
+        var errors = validationErrors ?? _validator.Validate(result);
         reasons.AddRange(errors);
 
         if (ContainsMultipleDocuments(documentText))
@@ -37,11 +35,13 @@ public sealed class ReviewPolicy
                 "were detected in one input file.");
         }
 
-        if (ContainsAmbiguousNumericDate(documentText))
+        var ambiguousDate = ContainsAmbiguousNumericDate(documentText);
+
+        if (ambiguousDate)
         {
             reasons.Add(
-                "The source contains a numeric date whose day/month " +
-                "interpretation may be ambiguous.");
+                "The completion date is ambiguous and cannot be " +
+                "normalized reliably without human review.");
         }
 
         if (ContainsTruncationSignals(documentText))
@@ -64,7 +64,11 @@ public sealed class ReviewPolicy
 
         return result with
         {
+            // Do not keep a guessed date when the source date is ambiguous.
+            Abschlussdatum = ambiguousDate ? null : result.Abschlussdatum,
+
             PruefungErforderlich = distinctReasons.Count > 0,
+
             Begruendung = distinctReasons.Count == 0
                 ? result.Begruendung
                 : string.Join(" ", distinctReasons)
