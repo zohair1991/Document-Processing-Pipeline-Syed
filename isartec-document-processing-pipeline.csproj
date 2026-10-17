@@ -14,4 +14,11 @@
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="10.0.13" />
   </ItemGroup>
 
+<ItemGroup>
+  <Compile Remove="DocumentProcessingPipeline.Tests/**/*.cs" />
+  <Compile Remove="DocumentProcessingPipeline.Tests/obj/**/*.cs" />
+  <Compile Remove="DocumentProcessingPipeline.Tests/bin/**/*.cs" />
+</ItemGroup>
+
+
 </Project>
