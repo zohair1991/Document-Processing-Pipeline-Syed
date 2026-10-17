@@ -68,8 +68,11 @@ public sealed class BatchProcessor
                     cancellationToken);
 
                 var validationErrors = _validator.Validate(result);
+                result = _reviewPolicy.Apply(
+                    result,
+                    documentText,
+                    validationErrors);
 
-                result = _reviewPolicy.Apply(result);
 
                 var resultPath = Path.Combine(
                     outputDirectory,

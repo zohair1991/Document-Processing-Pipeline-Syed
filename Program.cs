@@ -12,7 +12,7 @@ var outputDirectory = Path.Combine(
 
 var analyzer = new DocumentAnalyzer();
 var validator = new ResultValidator();
-var reviewPolicy = new ReviewPolicy();
+var reviewPolicy = new ReviewPolicy(validator);
 
 var processor = new BatchProcessor(
     analyzer,
