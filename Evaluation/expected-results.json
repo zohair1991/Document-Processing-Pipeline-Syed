@@ -1,0 +1,122 @@
+[
+    {
+        "fileName": "01_hochschulzugangsberechtigung.txt",
+        "expectedDocumentType": "hochschulzugangsberechtigung",
+        "expectedReviewRequired": false,
+        "expectedHolderName": "Marlene Kirchhoff",
+        "expectedIssuingInstitution": "Staatliches Gymnasium am Stadtpark Regensburg",
+        "expectedCompletionDate": "2022-06-28",
+        "expectedOverallGrade": "2.3",
+        "expectedGradingSystem": null
+    },
+    {
+        "fileName": "02_hochschulzeugnis.txt",
+        "expectedDocumentType": "hochschulzeugnis",
+        "expectedReviewRequired": false,
+        "expectedHolderName": "Jonas Teichmann",
+        "expectedIssuingInstitution": "Technische Hochschule Mittelfranken",
+        "expectedCompletionDate": "2023-02-14",
+        "expectedOverallGrade": "1.9",
+        "expectedGradingSystem": null
+    },
+    {
+        "fileName": "03_sprachnachweis_telc.txt",
+        "expectedDocumentType": "sprachnachweis",
+        "expectedReviewRequired": false,
+        "expectedHolderName": "Oksana Petrenko",
+        "expectedIssuingInstitution": "telc gGmbH",
+        "expectedCompletionDate": "2024-05-17",
+        "expectedOverallGrade": "bestanden (gut)",
+        "expectedGradingSystem": "Punktesystem 0–192, Niveau C1 (GER)"
+    },
+    {
+        "fileName": "04_fachhochschulreife_ohne_note.txt",
+        "expectedDocumentType": "hochschulzugangsberechtigung",
+        "expectedReviewRequired": false,
+        "expectedHolderName": "Devin Olbrich",
+        "expectedIssuingInstitution": "Berufliche Oberschule Augsburg",
+        "expectedCompletionDate": "2021-07-24",
+        "expectedOverallGrade": null,
+        "expectedGradingSystem": null
+    },
+    {
+        "fileName": "05_mietvertrag.txt",
+        "expectedDocumentType": "sonstiges",
+        "expectedReviewRequired": false,
+        "expectedHolderName": null,
+        "expectedIssuingInstitution": null,
+        "expectedCompletionDate": null,
+        "expectedOverallGrade": null,
+        "expectedGradingSystem": null
+    },
+    {
+        "fileName": "06_zwei_zeugnisse_kombiniert.txt",
+        "expectedDocumentType": "sonstiges",
+        "expectedReviewRequired": true,
+        "expectedHolderName": null,
+        "expectedIssuingInstitution": null,
+        "expectedCompletionDate": null,
+        "expectedOverallGrade": null,
+        "expectedGradingSystem": null
+    },
+    {
+        "fileName": "07_transcript_usa.txt",
+        "expectedDocumentType": "hochschulzeugnis",
+        "expectedReviewRequired": false,
+        "expectedHolderName": "Marcus A. Whitfield",
+        "expectedIssuingInstitution": "University of Northern Colorado",
+        "expectedCompletionDate": "2021-05-14",
+        "expectedOverallGrade": "3.42",
+        "expectedGradingSystem": "GPA 4.00 scale"
+    },
+    {
+        "fileName": "08_fragment_abgeschnitten.txt",
+        "expectedDocumentType": "hochschulzeugnis",
+        "expectedReviewRequired": true,
+        "expectedHolderName": "Tobias Rehm",
+        "expectedIssuingInstitution": null,
+        "expectedCompletionDate": null,
+        "expectedOverallGrade": null,
+        "expectedGradingSystem": null
+    },
+    {
+        "fileName": "09_masterzeugnis_datum_mehrdeutig.txt",
+        "expectedDocumentType": "hochschulzeugnis",
+        "expectedReviewRequired": true,
+        "expectedHolderName": "Nadia El-Amrani",
+        "expectedIssuingInstitution": "European Business School Rhein-Main",
+        "expectedCompletionDate": null,
+        "expectedOverallGrade": "1.8",
+        "expectedGradingSystem": null
+    },
+    {
+        "fileName": "10_sprachnachweis_ielts.txt",
+        "expectedDocumentType": "sprachnachweis",
+        "expectedReviewRequired": false,
+        "expectedHolderName": "Arjun Singh",
+        "expectedIssuingInstitution": "British Council Munich (DE012)",
+        "expectedCompletionDate": "2024-03-09",
+        "expectedOverallGrade": "7.5",
+        "expectedGradingSystem": "IELTS Band Score (0–9)"
+    },
+    {
+        "fileName": "11_ihk_abschlusszeugnis.txt",
+        "expectedDocumentType": "sonstiges",
+        "expectedReviewRequired": false,
+        "expectedHolderName": "Florian Wagenbrenner",
+        "expectedIssuingInstitution": "Industrie- und Handelskammer für München und Oberbayern",
+        "expectedCompletionDate": "2024-06-17",
+        "expectedOverallGrade": "84 Punkte — gut",
+        "expectedGradingSystem": "Punkte (0–100), Prädikat"
+    },
+    {
+        "fileName": "12_zeugnis_scan_ocr.txt",
+        "expectedDocumentType": "hochschulzeugnis",
+        "expectedReviewRequired": true,
+        "expectedHolderName": null,
+        "expectedIssuingInstitution": null,
+        "expectedCompletionDate": null,
+        "expectedOverallGrade": null,
+        "expectedGradingSystem": null
+    }
+]

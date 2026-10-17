@@ -1,0 +1,86 @@
+[
+  {
+    "fileName": "01_hochschulzugangsberechtigung.txt",
+    "success": true,
+    "reviewRequired": false,
+    "validationErrors": [],
+    "resultFile": "01_hochschulzugangsberechtigung.json"
+  },
+  {
+    "fileName": "02_hochschulzeugnis.txt",
+    "success": true,
+    "reviewRequired": false,
+    "validationErrors": [],
+    "resultFile": "02_hochschulzeugnis.json"
+  },
+  {
+    "fileName": "03_sprachnachweis_telc.txt",
+    "success": true,
+    "reviewRequired": false,
+    "validationErrors": [],
+    "resultFile": "03_sprachnachweis_telc.json"
+  },
+  {
+    "fileName": "04_fachhochschulreife_ohne_note.txt",
+    "success": true,
+    "reviewRequired": false,
+    "validationErrors": [],
+    "resultFile": "04_fachhochschulreife_ohne_note.json"
+  },
+  {
+    "fileName": "05_mietvertrag.txt",
+    "success": true,
+    "reviewRequired": false,
+    "validationErrors": [],
+    "resultFile": "05_mietvertrag.json"
+  },
+  {
+    "fileName": "06_zwei_zeugnisse_kombiniert.txt",
+    "success": true,
+    "reviewRequired": true,
+    "validationErrors": [],
+    "resultFile": "06_zwei_zeugnisse_kombiniert.json"
+  },
+  {
+    "fileName": "07_transcript_usa.txt",
+    "success": true,
+    "reviewRequired": false,
+    "validationErrors": [],
+    "resultFile": "07_transcript_usa.json"
+  },
+  {
+    "fileName": "08_fragment_abgeschnitten.txt",
+    "success": true,
+    "reviewRequired": true,
+    "validationErrors": [],
+    "resultFile": "08_fragment_abgeschnitten.json"
+  },
+  {
+    "fileName": "09_masterzeugnis_datum_mehrdeutig.txt",
+    "success": true,
+    "reviewRequired": true,
+    "validationErrors": [],
+    "resultFile": "09_masterzeugnis_datum_mehrdeutig.json"
+  },
+  {
+    "fileName": "10_sprachnachweis_ielts.txt",
+    "success": true,
+    "reviewRequired": false,
+    "validationErrors": [],
+    "resultFile": "10_sprachnachweis_ielts.json"
+  },
+  {
+    "fileName": "11_ihk_abschlusszeugnis.txt",
+    "success": true,
+    "reviewRequired": false,
+    "validationErrors": [],
+    "resultFile": "11_ihk_abschlusszeugnis.json"
+  },
+  {
+    "fileName": "12_zeugnis_scan_ocr.txt",
+    "success": true,
+    "reviewRequired": true,
+    "validationErrors": [],
+    "resultFile": "12_zeugnis_scan_ocr.json"
+  }
+]

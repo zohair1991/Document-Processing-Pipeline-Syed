@@ -1,0 +1,10 @@
+{
+  "dokumenttyp": "hochschulzugangsberechtigung",
+  "name_inhaber": "Devin Olbrich",
+  "ausstellende_institution": "Berufliche Oberschule Augsburg",
+  "abschlussdatum": "2021-07-24",
+  "gesamtnote": null,
+  "notensystem": null,
+  "pruefung_erforderlich": false,
+  "begruendung": "Das Dokument ist ein Zeugnis der Fachhochschulreife und berechtigt zum Studium an Fachhochschulen, daher Klassifikation als hochschulzugangsberechtigung. Name, ausstellende Institution und Ausstellungsdatum sind eindeutig angegeben. Es wird keine Gesamtnote ausgewiesen, nur Einzelfachnoten in verbaler Form; dies ist bei diesem Dokumenttyp \u00FCblich und erfordert keine Pr\u00FCfung. Keine Widerspr\u00FCche, keine OCR-Fehler erkennbar."
+}
