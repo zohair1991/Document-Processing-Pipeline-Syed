@@ -1,30 +1,27 @@
 # AI-Based Document Verification Pipeline
 
-A C#/.NET console application that classifies document text, extracts relevant information using Claude, validates the structured result, and identifies documents that require human review.
+A C#/.NET 10 console application that classifies document text, extracts structured information using Claude, validates the results, and identifies documents requiring human review.
 
 ## Requirements
 
 - .NET 10 SDK
-- An Anthropic API key
+- Anthropic API key for AI-powered processing
 
-## Run the application
+## Setup and execution
 
-1. Clone the repository and open the project directory.
-2. Configure the API key as an environment variable.
-
-**PowerShell:**
+Configure the API key in PowerShell:
 
 ```powershell
 $env:ANTHROPIC_API_KEY = "your-api-key"
 ```
 
-3. Optionally configure the model. The default is `claude-sonnet-4-6`.
+Optionally configure the model. The default is `claude-sonnet-4-6`.
 
 ```powershell
 $env:ANTHROPIC_MODEL = "claude-sonnet-4-6"
 ```
 
-4. Run the application:
+Build and run the application:
 
 ```powershell
 dotnet restore
@@ -32,39 +29,49 @@ dotnet build
 dotnet run
 ```
 
-Place the input `.txt` documents in the `Input/` directory. Results are written to `Output/`, with one JSON result per document and a `summary.json` overview.
+Place input `.txt` documents in `Input/`. The application writes one JSON result per document to `Output/`, along with `summary.json`. If processing an individual document fails, an `.error.json` file is written and processing continues with the remaining documents.
+
+## Evaluation and tests
+
+Evaluate the existing outputs against `Evaluation/expected-results.json`:
+
+```powershell
+dotnet run -- --evaluate
+```
+
+The evaluator compares classification, review decisions, and extracted fields against the expected records. It does not call the AI API; outputs must already exist in `Output/`.
+
+Run the automated unit tests:
+
+```powershell
+dotnet test .\DocumentProcessingPipeline.Tests\DocumentProcessingPipeline.Tests.csproj
+```
+
+The seven unit tests cover validation rules and human-review policy behavior without API calls.
 
 ## Design decisions
 
-**AI responsibilities:** Claude classifies each document into `hochschulzugangsberechtigung`, `hochschulzeugnis`, `sprachnachweis`, or `sonstiges`, extracts the requested fields, normalizes dates where possible, and provides a justification for its review decision.
+**AI responsibilities:** Claude classifies documents as `hochschulzugangsberechtigung`, `hochschulzeugnis`, `sprachnachweis`, or `sonstiges`; extracts the requested fields; and provides a justification for its review decision.
 
-**Code responsibilities:** C# handles batch orchestration, JSON serialization, schema validation, and deterministic review checks. Keeping these checks outside the model makes critical rules easier to test and explain.
+**Code responsibilities:** C# handles batch orchestration, JSON serialization, validation, and deterministic review checks. This separation makes critical rules more predictable and testable while allowing the model to handle varied document wording and formats.
 
-## Human-review policy
+**Human-review policy:** Review is required when requested by the model, when validation fails, or when deterministic checks detect risk signals such as multiple certificates in one file, ambiguous numeric completion dates, truncation, or OCR-quality warnings. Missing information alone does not automatically trigger review.
 
-A document is flagged when the model requests review, validation fails, or deterministic checks detect relevant risk signals, including:
+A successfully processed document is not necessarily a verified document. Human review remains important when extracted information is uncertain.
 
-- Multiple certificates in one input file.
-- An ambiguous numeric completion or examination date.
-- Signs of truncation or incomplete content.
-- Explicit OCR-quality warnings or strong OCR-corruption signals.
+## Limitations
 
-Missing information alone does not automatically require review when the source does not provide that information. For example, a missing overall grade is represented as `null`.
+- The schema supports one result per input file, so multiple certificates in one file cannot be represented independently.
+- Deterministic checks cover known risk patterns and cannot detect every extraction error.
+- The application processes text files; OCR is not performed by the pipeline.
+- Evaluation quality depends on the accuracy and consistency of the expected records. Exact string comparisons may count formatting differences as mismatches.
+- The current implementation does not provide comprehensive production-grade monitoring or API cost tracking.
 
-The policy favors escalation when the result may be unreliable. A successful processing status means the pipeline produced an output; it does not mean the document has been independently verified.
+## Future improvements
 
-## Current limitations
-
-- The current schema produces one result per input file, so multiple certificates in one file cannot be represented independently.
-- The system relies on model output and a limited set of deterministic checks. Subtle extraction errors may go undetected.
-- OCR is not performed by this application; it processes text already available in the input files.
-- The review rules cover known risk patterns and are not a substitute for comprehensive evaluation.
-
-## Next steps for production
-
-1. Enforce a structured output schema and add automated tests for extraction and validation.
-2. Build an evaluation set with expected results and measure classification, extraction, and review-decision accuracy.
-3. Add retries, timeouts, rate-limit handling, and more detailed error reporting.
-4. Track per-document latency and API cost.
-5. Support multiple documents within a single file and improve OCR integration.
+1. Enforce structured model output and strengthen automated tests.
+2. Expand the independently verified evaluation dataset.
+3. Add retries, timeouts, and rate-limit handling.
+4. Track API latency and cost per document.
+5. Support multiple documents per file and integrate OCR.
 6. Add observability, data-retention controls, and privacy safeguards before processing real applicant documents.
